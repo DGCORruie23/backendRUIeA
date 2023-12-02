@@ -1,0 +1,11 @@
+RUI
+RUI232323
+
+python manage.py shell
+from usuario.models import Usuario, Paises, EstadoFuerza, Frases, Municipios 
+Paises.objects.all().delete()
+EstadoFuerza.objects.all().delete()
+Municipios.objects.values('estadoAbr').order_by('estadoAbr').distinct() 
+a = Municipios.objects.values('estado').order_by('estado').distinct()  
+
+EstadoFuerza.objects.values('oficinaR').order_by('oficinaR').distinct() 
