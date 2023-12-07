@@ -28,7 +28,7 @@ services:
     container_name: RuiNginx
     build: ./nginx
     ports:
-      - 4525:80
+      - 443:80
     links:
       - web
     volumes:
