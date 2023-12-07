@@ -71,21 +71,21 @@ puntos_Tab = EstadoFuerza.objects.filter(oficinaR="TABASCO")
 
 types_PRescate = []
 
-for puntos in puntos_Tab:
-    nomS = str(puntos.nomPuntoRevision)
-    nomS1 = ""
-    if nomS[0]== " ":
-        nomS1 = nomS[1:]
-    else:
-        nomS1 = nomS
+# for puntos in puntos_Tab:
+#     nomS = str(puntos.nomPuntoRevision)
+#     nomS1 = ""
+#     if nomS[0]== " ":
+#         nomS1 = nomS[1:]
+#     else:
+#         nomS1 = nomS
 
-    types_PRescate.append((nomS1, nomS1))
+#     types_PRescate.append((nomS1, nomS1))
 
 types_paises = []
 
-for paises_I in Paises.objects.all():
-    nomPS = str(paises_I.nombre_pais)
-    types_paises.append((nomPS, nomPS))
+# for paises_I in Paises.objects.all():
+#     nomPS = str(paises_I.nombre_pais)
+#     types_paises.append((nomPS, nomPS))
 
 
 class ExcelForm(forms.Form):    
